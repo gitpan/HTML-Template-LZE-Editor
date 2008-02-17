@@ -1,0 +1,5 @@
+Revision history for Perl extension HTML::Template::LZE::Editor.
+0.24
+        workaround
+0.23
+        use Module Build, new namespace  HTML::Template::LZE::Editor
