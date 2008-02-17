@@ -1,30 +1,29 @@
 ---
 name: HTML-Template-LZE-Editor
-version: 0.24
+version: 0.25
 author:
   - 'Dirk Lindner <lindnerei@o2online.de>'
-abstract: BBCode editor
+abstract: BBCode & html editor
 license: lgpl
 resources:
   license: http://opensource.org/licenses/artistic-license.php
 requires:
-  CGI::LZE: 0.24
+  CGI::LZE: 0.25
   HTML::Entities: 1.35
-  HTML::Template::LZE::Template: 0.24
-  HTML::Template::LZE::Window: 0.24
+  HTML::Template::LZE: 0.25
+  HTML::Template::LZE::Window: 0.25
   Module::Build: 0.2808
   Syntax::Highlight::Perl: 1
   Test::More: 0.7
   Test::Pod: 1.26
   Test::Pod::Coverage: 0.55
-  Test::Signature: 1.1
 provides:
   HTML::LZE::BBCODE:
     file: lib/HTML/LZE/BBCODE.pm
-    version: 0.24
+    version: 0.25
   HTML::Template::LZE::Editor:
     file: lib/HTML/Template/LZE/Editor.pm
-    version: 0.24
+    version: 0.25
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

@@ -3,13 +3,14 @@ use lib("lib");
 use HTML::Template::LZE::Editor;
 use HTML::LZE::BBCODE;
 use CGI::LZE qw(:all);
-init("/srv/www/cgi-bin/config/settings.pl");
+init("/home/groups/l/li/lindnerei/cgi-bin/config/settings.pl");
 print header;
-print start_html(-title => 'Editor', -script => [{-type => 'text/javascript', -src => '/javascript/editor.js'}], -style => '/style/Crystal/editor.css',);
+print start_html(-title => 'HTML::Template::LZE::Editor', -script => [{-type => 'text/javascript', -src => '/javascript/editor.js'}], -style => '/style/Crystal/editor.css',);
 if(param('action') && param('action') eq 'add') {
         my $txt = param('message');
-        if(param('submit') eq 'preview') {
+        if(param('submit') eq translate('preview')) {
                 print a({href => "$ENV{SCRIPT_NAME}?txt=$txt"}, 'Edit it Again');
+                print h2(param('headline'));
                 BBCODE(\$txt);
                 print br(), $txt;
         } else {
@@ -26,11 +27,11 @@ if(param('action') && param('action') eq 'add') {
 
                 class => "min",
 
-                attach => '1',
+                attach => 0,
 
                 maxlength => '100',
 
-                path => "/srv/www/cgi-bin/templates/",
+                path => "/home/groups/l/li/lindnerei/cgi-bin/templates/",
 
                 reply => '',
 
@@ -49,4 +50,5 @@ if(param('action') && param('action') eq 'add') {
 
         print $editor->show();
 }
-
+use showsource;
+&showSource("./editor.pl");

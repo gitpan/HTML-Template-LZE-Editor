@@ -5,7 +5,7 @@ use vars qw(@EXPORT @ISA );
 require Exporter;
 @HTML::LZE::BBCODE::EXPORT  = qw(BBCODE);
 @ISA                        = qw(Exporter);
-$HTML::LZE::BBCODE::VERSION = '0.24';
+$HTML::LZE::BBCODE::VERSION = '0.25';
 use HTML::Entities;
 
 =head1 NAME

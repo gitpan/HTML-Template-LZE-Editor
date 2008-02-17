@@ -21,12 +21,12 @@ use vars qw(
   $html
 );
 require Exporter;
-use HTML::Template::LZE::Template;
-@HTML::Template::LZE::Editor::ISA         = qw( Exporter HTML::Template::LZE::Template);
+use HTML::Template::LZE;
+@HTML::Template::LZE::Editor::ISA         = qw( Exporter HTML::Template::LZE);
 @HTML::Template::LZE::Editor::EXPORT_OK   = qw(initEditor show );
 %HTML::Template::LZE::Editor::EXPORT_TAGS = ('all' => [qw(initEditor show )]);
 
-$HTML::Template::LZE::Editor::VERSION = '0.24';
+$HTML::Template::LZE::Editor::VERSION = '0.25';
 
 $DefaultClass = 'HTML::Template::LZE::Editor' unless defined $HTML::Template::LZE::Editor::DefaultClass;
 
