@@ -26,7 +26,7 @@ use HTML::Template::LZE;
 @HTML::Template::LZE::Editor::EXPORT_OK   = qw(initEditor show );
 %HTML::Template::LZE::Editor::EXPORT_TAGS = ('all' => [qw(initEditor show )]);
 
-$HTML::Template::LZE::Editor::VERSION = '0.25';
+$HTML::Template::LZE::Editor::VERSION = '0.26';
 
 $DefaultClass = 'HTML::Template::LZE::Editor' unless defined $HTML::Template::LZE::Editor::DefaultClass;
 

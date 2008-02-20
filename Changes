@@ -1,4 +1,8 @@
-Revision history for Perl extension HTML::Template::LZE::Editor.
+Revision history for Perl extension HTML::Template::LZE::Editor 0.26
+
+0.26
+        Overwrought Docs and clean up code, fix build System
+
 0.25
         Clean Build system
 0.24
